@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Anotador de Tareas</title>
+    <!--BOOTSTRAP 4-->
+    <link rel="stylesheet" href="https://bootswatch.com/4/lux/bootstrap.min.css">
+  </head>
+  <body>
+
+    <!--NAV-->
+    <nav class="navbar navbar-light bg-light">
+      <div class="container">
+        <a class="navbar-brand" href="#">Anotador de Tareas</a>
+      </div>
+    </nav>
+
+    <div class="container">
+      <div class="row my-5">
+        <div class="col-md-4">
+
+          <div class="card">
+            <div class="card-body">
+              <!--Formulario-->
+              <form id="formTask">
+                <div class="form-group">
+                  <input type="text" id="title" placeholder="Agregar una tarea" class="form-control">
+                </div>
+                <div class="form-group">
+                  <textarea id="description" cols="30" rows="10" placeholder="Agregar una descripción" class="form-control"></textarea>
+                </div>
+                <button type="submit" class="btn btn-dark btn-block">Guardar</button>
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-8">
+          <div id="tasks"></div>
+          <iframe src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23D50000&amp;ctz=America%2FArgentina%2FBuenos_Aires&amp;src=Z2FyY2lhLmFndXN0aW4uYXJnQGdtYWlsLmNvbQ&amp;src=NnY0bGlrY2RvaTdrcTJ1Z2pvOW1pM3BnNTRAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;src=YWRkcmVzc2Jvb2sjY29udGFjdHNAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&amp;src=ZmFtaWx5MTEwNzI5ODY3NDUwMjM5MzE2NzlAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;src=ZXMuYXIjaG9saWRheUBncm91cC52LmNhbGVuZGFyLmdvb2dsZS5jb20&amp;color=%23039BE5&amp;color=%233F51B5&amp;color=%2333B679&amp;color=%237CB342&amp;color=%23009688" style="border:solid 1px #777" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+        </div>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
