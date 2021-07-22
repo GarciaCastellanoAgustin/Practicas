@@ -1,46 +1,211 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8">
-    <title>Anotador de Tareas</title>
-    <!--BOOTSTRAP 4-->
-    <link rel="stylesheet" href="https://bootswatch.com/4/lux/bootstrap.min.css">
-  </head>
-  <body>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- Boostrap 5-->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!--ScrollReveal-->
+    <script src="js/scrollreveal.js"></script>
+    <title>Life organized</title>
+</head>
+<body>
 
-    <!--NAV-->
-    <nav class="navbar navbar-light bg-light">
-      <div class="container">
-        <a class="navbar-brand" href="#">Anotador de Tareas</a>
+ <!--NavBar-->
+
+ <nav class="navbar navbar-expand-lg navbar-light bg-primary position-relative ">
+  <div class="container-fluid mx-5">
+    <a class="navbar-brand fw-bold" id="zoom" href="#">Nav<span class="text-light">bar</span></a>
+    <button class="navbar-toggler border-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <img src="img/three-dots-vertical.svg" alt="" class="">
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item d-flex" id="hover">
+          <a class="nav-link text-dark align-self-center" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item d-flex" id="hover">
+          <a class="nav-link text-dark align-self-center" href="#">Contact</a>
+        </li>
+        <li class="nav-item d-flex me-2" id="hover">
+          <a class="nav-link text-dark align-self-center" href="#">About us</a>
+        </li>
+        <li class="nav-item" id="zoom">
+          <a class="btn btn-light" href="app.html">Join In</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  <!--Section Main-->
+
+  <section>
+    <div class="row g-0 h-100">
+
+      <div class="col-lg-6 d-flex scrollMain">
+        <div class="content mx-auto align-self-center px-4">
+          <small class="text-primary"><span class="badge bg-primary me-1">Lorem</span> Lorem ipsum dolor sit amet consectetur adipisicing elit.</small>
+          <h1 class="display-4 fw-bold">Lorem ipsum <span class="text-primary">bar</span></h1>
+          <p class="lead mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa modi asperiores pariatur vel, recusandae quis!</p>
+          <a href="#" class="btn btn-primary">Abre tu cuenta hoy</a>
+        </div>
       </div>
-    </nav>
 
-    <div class="container">
-      <div class="row my-5">
-        <div class="col-md-4">
+      <div class="col-lg-6 d-flex bg-light">
+        <div class="content mx-auto align-self-center px-4 my-5">
+          <img src="img/pexels-igor-haritanovich-1695052.jpg" alt="" class="img-fluid">
+        </div>
+      </div>
 
-          <div class="card">
-            <div class="card-body">
-              <!--Formulario-->
-              <form id="formTask">
-                <div class="form-group">
-                  <input type="text" id="title" placeholder="Agregar una tarea" class="form-control">
-                </div>
-                <div class="form-group">
-                  <textarea id="description" cols="30" rows="10" placeholder="Agregar una descripción" class="form-control"></textarea>
-                </div>
-                <button type="submit" class="btn btn-dark btn-block">Guardar</button>
-              </form>
+    </div>
+  </section>
+
+   <!--Section About-->
+
+   <main class="d-flex scrollSteps">
+      <div class="container-fluid align-self-center">
+
+        <div class="row">
+
+          <div class="col-lg-6">
+            <div class="content mx-auto px-4 my-5"><img src="img/woman.jpg" class="img-fluid" alt=""></div>
+          </div>
+
+          <div class="col-lg-6 d-flex">
+            <div class="align-self-center">
+              <h1 class="display-4 fw-bold mb-4">Organize your Life with us.</h1>
+              <ul class="list-unstyled">
+  
+                <li class="d-flex mb-4">
+                  <p class="text-primary lead fw-bold goals">1st</p>
+                  <div class="ms-3">
+                    <p class="lead fw-bold">Join Us:</p> <p>Lorem ipsum dolor sit amet.</p>
+                  </div>
+                </li>
+  
+                <li class="d-flex mb-4">
+                  <p class="text-primary lead fw-bold goals">2nd</p>
+                  <div class="ms-3">
+                    <p class="lead fw-bold">Join Us:</p> <p>Lorem ipsum dolor sit amet.</p>
+                  </div>
+                </li>
+  
+                <li class="d-flex mb-4">
+                  <p class="text-primary lead fw-bold">3rd</p>
+                  <div class="ms-3">
+                    <p class="lead fw-bold">Join Us:</p> <p>Lorem ipsum dolor sit amet.</p>
+                  </div>
+                </li>
+  
+              </ul>
             </div>
           </div>
+
         </div>
 
-        <div class="col-md-8">
-          <div id="tasks"></div>
-          <iframe src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23D50000&amp;ctz=America%2FArgentina%2FBuenos_Aires&amp;src=Z2FyY2lhLmFndXN0aW4uYXJnQGdtYWlsLmNvbQ&amp;src=NnY0bGlrY2RvaTdrcTJ1Z2pvOW1pM3BnNTRAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;src=YWRkcmVzc2Jvb2sjY29udGFjdHNAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&amp;src=ZmFtaWx5MTEwNzI5ODY3NDUwMjM5MzE2NzlAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;src=ZXMuYXIjaG9saWRheUBncm91cC52LmNhbGVuZGFyLmdvb2dsZS5jb20&amp;color=%23039BE5&amp;color=%233F51B5&amp;color=%2333B679&amp;color=%237CB342&amp;color=%23009688" style="border:solid 1px #777" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+      </div>
+   </main>
+
+   <!--Contact-->
+
+   <article class="d-flex mb-5 my-auto">
+     <div class="container align-self-center mb-5">
+       <div class="dw bg-light mb-5">
+
+        <div class="row">
+
+          <div class="col-lg-7 d-flex">
+
+           <div class="align-self-center p-5">
+            <h2 class="display-5 fw-bold mb-3">Contact us:</h2>
+            <p class="lead mb-3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis, recusandae.</p>
+            <a href="" class="btn btn-primary">Join In</a>
+           </div>
+
+          </div>
+ 
+          <div class="col-lg-5 d-flex">
+            <div class="align-self-center mx-auto p-5">
+              <img src="img/woman.jpg" class="img-fluid" alt="">
+            </div>
+           
+          </div>
+ 
+        </div>
+
+       </div>
+     </div>
+   </article>
+
+
+   <footer class="d-flex bg-light pt-4">
+
+    <div class="container align-self-center pt-2">
+      <div class="row">
+
+        <div class="col-lg-4 col-md-6">
+          <h3 class="fw-bold mb-3">Join In</h3>
+          <ul class="list-unstyled">
+            <li class="mb-3"><a href="#" class="text-dark text-decoration-none">Linkdin</a></li>
+            <li class="mb-3"><a href="#" class="text-dark text-decoration-none">Linkdin</a></li>
+            <li class="mb-3"><a href="#" class="text-dark text-decoration-none">Linkdin</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-4 col-md-6">
+          <h3 class="fw-bold mb-3">Join In</h3>
+          <ul class="list-unstyled">
+            <li class="mb-3"><a href="#" class="text-dark text-decoration-none">Linkdin</a></li>
+            <li class="mb-3"><a href="#" class="text-dark text-decoration-none">Linkdin</a></li>
+            <li class="mb-3"><a href="#" class="text-dark text-decoration-none">Linkdin</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-4 col-md-12">
+          <h3 class="fw-bold mb-3">Contact</h3>
+          <ul class="list-unstyled">
+            <li class="mb-3"><a href="#" class="text-dark text-decoration-none">You can contact us by:</a></li>
+
+            <li>
+              <ul class="list-inline">
+                <li class="list-inline-item me-3"><a href=""><img src="img/linkedin.svg" alt=""></a></li>
+                <li class="list-inline-item me-3"><a href=""><img src="img/github.svg" alt=""></a></li>
+                <li class="list-inline-item me-3"><a href=""><img src="img/envelope-fill.svg" alt=""></a></li>
+              </ul>
+            </li>
+
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="border-top py-4">
+        <div class="row">
+
+          <div class="col-lg-6 col-md-12">
+            <small>Made by: Agustin Garcia Castellano</small>
+          </div>
+
+          <div class="col-lg-6 col-md-12">
+            <ul class="list-inline text-lg-end">
+              <li class="list-inline-item"> <a class="text-dark text-decoration-none" href=""><small>Made with Bootstrap</small></a></li>
+            </ul>
+          </div>
+
         </div>
       </div>
+
     </div>
-    <script src="app.js"></script>
-  </body>
+
+   </footer>
+
+<script src="js/index.js"></script>
+<script src="js/bootstrap.bundle.js"></script>
+</body>
 </html>
