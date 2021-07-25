@@ -32,13 +32,21 @@ function getTasks() {
     let title = tasks[i].title;
     let description = tasks[i].description;
 
-    tasksView.innerHTML += `<div class="card mb-3">
-        <div class="card-body">
-          <p>${title} - ${description}
-          <a href="#" onclick="deleteTask('${title}')" class="btn btn-danger ml-5">Borrar</a>
-          </p>
-        </div>
-      </div>`;
+    tasksView.innerHTML += 
+    
+  `<div class="card mb-3">
+      <h3 class="fw-bold my-3 mx-3">${title}</h3>
+      <ul class="list-unstyled">
+        <li>
+          <ul class="list-inline mx-3">
+            <li class="list-inline-item me-3"><p class="lead mb-2">${description}</p></li>
+            <li class="list-inline-item me-3"><a href="#" class="btn btn-secondary justify-content-center mb-2" onclick="deleteTask('${title}')">Delete</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+      `
+      ;
   }
 }
 

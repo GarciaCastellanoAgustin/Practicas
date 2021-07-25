@@ -6,22 +6,29 @@ sr.reveal('.navbar', {
     distance: '-100px'
 });
 
-sr.reveal('.scrollMain', {
+sr.reveal('.intro', {
     duration: 1450,
     origin: 'left',
     distance: '-120px'
 });
 
-sr.reveal('.scrollSteps', {
-    duration: 2000,
+sr.reveal('.steps', {
+    duration: 1500,
     origin: 'left',
     distance: '500%',
     interval: 106
 });
 
 sr.reveal('article', {
-    duration: 2000,
+    duration: 1500,
     origin: 'right',
+    distance: '400%',
+    interval: 106
+});
+
+sr.reveal('iframe', {
+    duration: 2500,
+    origin: 'bottom',
     distance: '400%',
     interval: 106
 });
