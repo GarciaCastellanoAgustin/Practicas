@@ -69,3 +69,45 @@ try {
 } catch (error) {
     console.log(error.message);
 } */
+
+
+/* function newAsy(){
+    
+     return new Promise(function(resolve, reject){
+         try{
+             setTimeout(() => {
+                 resolve(10)
+                }, 2000);
+             } catch(error){
+            reject(error)
+         }
+     })
+ }
+
+async function programa(){
+    const restultado = await newAsy();
+    console.log ("El resultado es: " + restultado)
+}
+
+programa();
+*/
+
+ /* function sleep(miliseconds){
+    return new Promise((resolve, reject)=>{
+        if(miliseconds < 5000){
+            setTimeout(() => {
+                resolve();
+            }, miliseconds)
+        } else {
+            reject("tanto no gatin")
+        }
+        
+    })
+}
+
+async function programa(){
+    console.log("hola");
+    await sleep(3000);
+    console.log("chau");
+} */
+ // then para pushear el resultado de la promesa o algo asi

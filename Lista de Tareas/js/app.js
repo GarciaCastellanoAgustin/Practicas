@@ -44,8 +44,7 @@ function getTasks() {
           </ul>
         </li>
       </ul>
-    </div>
-      `
+    </div>`
       ;
   }
 }
