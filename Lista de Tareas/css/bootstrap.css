@@ -49,6 +49,10 @@ main{
   height: 700px;
 }
 
+.menuIcon:hover{
+  box-shadow: 0 1px 1px rgb(56, 56, 56);
+}
+
 @media (max-width: 992px){
   section{
     height: unset;
@@ -86,6 +90,10 @@ main{
   .numbers h2{
     padding-bottom: 0 !important;
     margin-bottom: 0 !important;
+  }
+
+  iframe{
+    height: 400px;
   }
 
 }

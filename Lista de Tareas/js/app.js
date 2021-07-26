@@ -1,3 +1,5 @@
+// Tasks
+
 document.getElementById('formTask').addEventListener('submit', saveTask);
 
 function saveTask(e) {
@@ -64,4 +66,44 @@ function deleteTask(title) {
 
 getTasks();
 
+// Clock
 
+(function(){
+
+let timeUpdate = function(){
+  let date = new Date();
+  let hours = date.getHours();
+  let minutes = date.getMinutes();
+  let day = date.getDay();
+  let dayOfTheMonth = date.getDate();
+  let month = date.getMonth();
+  let year = date.getFullYear();
+
+   let liHours = document.getElementById("hour");
+   let liMinutes = document.getElementById("minutes");
+   let liDay = document.getElementById("dayOfTheWeek");
+   let liDate = document.getElementById("dateNumbrer");
+   let liMonth = document.getElementById("month");
+   let liYear = document.getElementById("year");
+
+    let week = ['Sunday' , 'Monday' , 'Tuesday' , 'Wednesday' , 'Thursday' , 'Friday' , 'Saturday' ]
+    liDay.textContent = week[day];
+
+    liDate.textContent = dayOfTheMonth;
+
+    let months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+    liMonth.textContent = months[month];
+
+    liYear.textContent = year;
+    liHours.textContent = hours;
+    liMinutes.textContent = minutes;
+
+    if (minutes < 10) {
+      minutes = "0" + minutes
+    };
+};
+
+timeUpdate();
+let update = setInterval(timeUpdate, 1000)
+
+}())
