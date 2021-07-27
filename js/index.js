@@ -3,13 +3,13 @@ window.sr = ScrollReveal();
 sr.reveal('.navbar', {
     duration: 1450,
     origin: 'bottom',
-    distance: '-100px'
+    distance: '100%'
 });
 
 sr.reveal('.intro', {
     duration: 1450,
     origin: 'left',
-    distance: '-120px'
+    distance: '120%'
 });
 
 sr.reveal('.steps', {

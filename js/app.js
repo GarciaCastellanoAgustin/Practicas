@@ -85,6 +85,7 @@ let timeUpdate = function(){
    let liDate = document.getElementById("dateNumbrer");
    let liMonth = document.getElementById("month");
    let liYear = document.getElementById("year");
+   let hi = document.getElementById("hi");
 
     let week = ['Sunday' , 'Monday' , 'Tuesday' , 'Wednesday' , 'Thursday' , 'Friday' , 'Saturday' ]
     liDay.textContent = week[day];
@@ -100,6 +101,12 @@ let timeUpdate = function(){
 
     if (minutes < 10) {
       minutes = "0" + minutes
+    };
+
+    if (hours > 11){
+      hi.textContent = "Good afternoon"
+    }else{
+      hi.textContent = "Good morning"
     };
 };
 
