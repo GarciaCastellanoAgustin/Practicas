@@ -7,7 +7,7 @@
  */
 
  :root {
-    scroll-behavior: smooth;
+   scroll-behavior: smooth;
   --bs-primary: #000;
   --bs-secondary: #0d6efd;
   --bs-light: #f8f9fa;
@@ -27,6 +27,10 @@
   :root {
     scroll-behavior: smooth;
   }
+}
+
+.calendar{
+  max-height: 200px !important;
 }
 
 body {
@@ -90,10 +94,6 @@ main{
   .numbers h2{
     padding-bottom: 0 !important;
     margin-bottom: 0 !important;
-  }
-
-  iframe{
-    height: 400px;
   }
 
 }
@@ -4239,8 +4239,8 @@ textarea.form-control-lg {
   word-wrap: break-word;
   background-color: #fff;
   background-clip: border-box;
-  border: 1px solid rgba(0, 0, 0, 0.125);
-  border-radius: 0.25rem;
+  border: 1px solid #0d6dfd69;
+  border-radius: 0.75rem;
 }
 .card > hr {
   margin-right: 0;
